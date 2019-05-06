@@ -18,11 +18,16 @@ powershell.exe -executionpolicy bypass -file DocumentIntune.ps1
 ```
 The Documentation will be created in the same folder like the DocumentIntune.ps1 file resides.
 
-**Important:** Before using the Script the first time, you have to ensure, that you have installed the AzureAD and PSWord Module. To do that, you have to start PowerShell as an Adminstrator and install them:
+**Important:** Before using the Script the first time, you have to ensure, that you have installed and imported the AzureRM, AzureAD and PSWord Module. To do that, you have to start PowerShell as an Adminstrator and install them:
 
 ```
+Install-Module AzureRM
 Install-Module AzureAD
 Install-Module PSWord 
+```
+Import-Module AzureRM
+Import-Module AzureAD
+Import-Module PSWord 
 ```
 
 # Issues / Feedback
